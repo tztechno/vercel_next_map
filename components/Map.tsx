@@ -3,7 +3,7 @@ import L from 'leaflet';
 
 // デフォルトアイコンを指定
 const defaultIcon = L.icon({
-    iconUrl: 'https://unpkg.com/leaflet/dist/images/marker-icon.png',
+    iconUrl: 'https://unpkg.com/leaflet/dist/images/marker-icon.png', // 完全なURLを使用
     iconSize: [25, 41], // アイコンのサイズ
     iconAnchor: [12, 41], // アイコンのアンカー位置
     popupAnchor: [1, -34] // ポップアップのアンカー位置
