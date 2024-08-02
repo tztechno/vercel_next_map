@@ -87,7 +87,6 @@ const Map = () => {
                 }
             };
 
-            // Leafletのクリックイベントリスナーの追加
             mapInstance.on('click', handleMapClick);
 
             return () => {
@@ -151,8 +150,7 @@ const Map = () => {
             <div ref={mapRef} id="map" style={{ height: '700px', width: '100%' }}></div>
             <div style={{
                 position: 'fixed', bottom: '10px', left: '10px', zIndex: 1000,
-                display: 'flex', flexDirection: 'column', gap: '10px',
-                backgroundColor: 'white', padding: '10px', borderRadius: '5px'
+                display: 'flex', flexDirection: 'column', gap: '10px'
             }}>
                 <button onClick={() => watchId !== null && navigator.geolocation.clearWatch(watchId)} style={{ marginBottom: '5px' }}>Stop Tracking</button>
                 <button onClick={showCurrentLocation} style={{ marginBottom: '5px' }}>Show Current Location</button>
@@ -163,8 +161,7 @@ const Map = () => {
             {isPopupVisible && (
                 <div id="popup" style={{
                     position: 'fixed', bottom: '10px', left: '10px',
-                    backgroundColor: 'white', padding: '20px', zIndex: 2000, border: '1px solid black',
-                    boxShadow: '0px 0px 10px rgba(0,0,0,0.2)', borderRadius: '5px'
+                    backgroundColor: 'white', padding: '20px', zIndex: 2000, border: '1px solid black'
                 }}>
                     <h2>Polygon Information</h2>
                     <div>
