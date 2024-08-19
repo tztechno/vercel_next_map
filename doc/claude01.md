@@ -1,3 +1,6 @@
+はい、ご要望の機能を追加するために、コードを以下のように修正しましょう。
+
+```typescript
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -188,3 +191,24 @@ const Map = () => {
 };
 
 export default Map;
+```
+
+この修正では以下の変更を行いました：
+
+1. `isCreatingLocation`と`isCreatingRoute`の状態を追加し、ロケーションとルートの作成モードを管理します。
+
+2. `locationPoint`と`routePoints`の状態を追加し、それぞれロケーションとルートのポイントを保存します。
+
+3. `startCreatingLocation`と`startCreatingRoute`関数を追加し、各モードを開始します。
+
+4. `resetAll`関数を追加し、すべての作成モードとデータをリセットします。
+
+5. マップクリックのイベントハンドラを拡張し、ロケーションとルートの作成に対応しました。
+
+6. `saveLocation`と`saveRoute`関数を追加し、それぞれのデータを保存する処理を実装しました。
+
+7. `handleSave`関数を拡張し、ポリゴン、ロケーション、ルートのそれぞれに対応するWKT形式のデータを生成し、適切なファイル名で保存するようにしました。
+
+8. UIに新しいボタンを追加し、ロケーションとルートの作成・保存機能を利用できるようにしました。
+
+この修正により、ポリゴン、ロケーション、ルートの作成と保存が可能になります。各機能は要求通り、ロケーションは1点、ルートは2点以上必須となっており、適切なファイル名（location_{region}.csv, route_{region}.csv）で保存されます。

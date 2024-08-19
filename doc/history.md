@@ -1,4 +1,12 @@
 ```
+2024-08-19 17:30
+create polygon, save polygonと同様の方法で
+create location, save location,
+create route, save roue,ボタンを作る
+それぞれ、location_{region}.csv,roue_{region}.csv
+というファイル名をつけて保存する
+
+
 2024-08-02 13:05
 確認しました
 地図の手前にボタン類があるので消えることはなくなり、

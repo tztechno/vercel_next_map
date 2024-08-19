@@ -1,10 +1,5 @@
-cd vercel_polygon_map
-https://github.com/tztechno/vercel_polygon_map.git
+```
 
-
-package.jsonを修正
-npm install
-npm run dev
 
 https://github.com/tztechno/vercel_next_map.git
 cd vercel_next_map
@@ -15,7 +10,7 @@ git remote add origin https://github.com/tztechno/vercel_next_map.git
 
 cd vercel_next_map
 git add .
-git commit -m “2024-08-02”
+git commit -m “2024-08-19”
 git push -u origin main
 
 git push -f origin main
@@ -30,4 +25,11 @@ http://localhost:3000
 
 http://localhost:3001
 
+
+
+
+cd vercel_next_map
 npm install
+
+npm run dev
+```
