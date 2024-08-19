@@ -39,7 +39,7 @@ const Map = () => {
         }).addTo(map);
 
         const initialMarker = L.marker([35.6895, 139.6917], { icon: defaultIcon }).addTo(map);
-        initialMarker.bindPopup("<b>Here!</b>").openPopup();
+        initialMarker.bindPopup("<b>Initial!</b>").openPopup();
         setMarker(initialMarker);
 
         const handleSuccess = (position: GeolocationPosition) => {
@@ -119,7 +119,7 @@ const Map = () => {
             mapInstance.setView([lat, lon], 15);
             if (marker) {
                 marker.setLatLng([lat, lon]);
-                marker.bindPopup("<b>Your current location!</b>").openPopup();
+                marker.bindPopup("<b>Here!</b>").openPopup();
             }
         }
     };
