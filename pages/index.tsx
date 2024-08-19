@@ -7,7 +7,7 @@ const Map = dynamic(() => import('../components/Map'), { ssr: false });
 const Home = () => {
     return (
         <div>
-            <h1>Current Location</h1>
+            <p>Current Location</p>
             <Map />
         </div>
     );
