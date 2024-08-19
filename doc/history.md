@@ -5,6 +5,7 @@ create location, save location,
 create route, save roue,ボタンを作る
 それぞれ、location_{region}.csv,roue_{region}.csv
 というファイル名をつけて保存する
+Map.tsx v14にて実装成功
 
 
 2024-08-02 13:05
