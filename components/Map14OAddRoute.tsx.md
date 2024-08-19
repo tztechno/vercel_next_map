@@ -197,7 +197,7 @@ const Map = () => {
             data = `${wkt},${region},${description}`;
             filename = `location_${region}.csv`;
         } else if (isCreatingRoute) {
-            const wkt = `"LINESTRING ((${routePoints.map(p => `${p.lng} ${p.lat}`).join(', ')}))"`;
+            const wkt = `"LINESTRING (${routePoints.map(p => `${p.lng} ${p.lat}`).join(', ')})"`;
             data = `${wkt},${region},${description}`;
             filename = `route_${region}.csv`;
         }
